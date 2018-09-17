@@ -1,0 +1,92 @@
+@import './reset.less';
+@import './border.less';
+
+.page-container{
+    height: 100%;
+    .van-pull-refresh{
+        height: auto;
+        min-height: 100%;
+    }
+    .item-wrap{
+        padding:8px 0 20px;
+        .grew {
+            transition: all 0.3s;
+            background: #f7f7f7;
+        }
+        .item-box {
+            width: 100%;
+            padding: 0 16px;
+            height: auto;
+            .item{
+                position: relative;
+            }
+            i{
+                position: absolute;
+                left:0;
+                top:21px;
+                display: block;
+                width: 40px;
+                height:40px;
+                border-radius: 50%;
+                background-color: #ccc;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-image: url(../assets/img/default_avatar.svg);
+            }
+            .conts{
+                position: relative;
+                text-align: left;
+                padding:21px 0 8px;
+                margin-left:56px;
+                padding-right: 76px;
+                border-bottom: 1px solid #E7EBEE;
+                font-size: 14px;
+            }
+            h4{
+                line-height: 1.1;
+                padding-top: 1px;
+                color: #1E3F59;
+                margin-bottom: 8px;
+            }
+            p{
+                line-height: 1.1;
+                padding-top: 1px;
+                color: #000000;
+                margin-bottom: 16px;
+                span {
+                    color: #8D9FAE;
+                    margin-right: 8px;
+                }
+            }
+            h4, p{
+                height: 1.1em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .item-thum{
+        position: absolute;
+        right: 0;
+        top:21px;
+    }
+}
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 30%;
+}
+.loading>div{
+    margin: 0 auto;
+}
+
+// .item-box:hover{
+//     background-color: #f7f7f7;
+//     transition: all 0.3s ease;
+// }
